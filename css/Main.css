@@ -5,7 +5,7 @@
 
 }
 
-.MainPage {
+.MainButton {
 	background-color:#ffffff;
 	border-radius: 10px;
 	border:5px solid #dcdcdc;
@@ -17,10 +17,10 @@
 	padding:6px 24px;
 	text-decoration:none;
 }
-.MainPage:hover {
+.MainButton:hover {
 	background-color:#f6f6f6;
 }
-.MainPage:active {
+.MainButton:active {
 	position:relative;
 	top:1px;
 }
