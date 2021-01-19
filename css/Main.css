@@ -1,7 +1,10 @@
 .Main {
-  position: relative;
-  top: 10%;
-  left: 5%;
+	position: relative;
+	z-index: 100;
+	top: 10%;
+	left: 15%;
+	right: 90%;
+	width: 115px;
 }
 
 .MainButton {
