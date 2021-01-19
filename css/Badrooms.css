@@ -1,5 +1,5 @@
 .Badrooms {
-  z-index: 89;
-  top: 30%;
-  left: 50%;
+  position: relative;
+  left: 15%;
+  top: -50%;
 }

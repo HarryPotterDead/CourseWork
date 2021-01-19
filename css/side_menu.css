@@ -1,6 +1,5 @@
 .side_menu {
   position: fixed;
-  z-index: 98;
   left: 10px;
   top: 100px;
   min-width: fit-content;
