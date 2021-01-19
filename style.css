@@ -1,14 +1,3 @@
-.logo {
-    position: fixed;
-    z-index: 100;
-    scale: 50%;
-    left: -55px;
-    top: -55px;
-    width: 250px;
-    height: 200px;
-    background-color: transparent;
-}
-
 .menu_up {
     position: fixed;
     z-index: 99;
@@ -24,6 +13,33 @@
     font: normal;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
+.Main {
+    position: relative;
+    top: 30%;
+    left: 5%;
+
+}
+.MainPage {
+	background-color:#ffffff;
+	border-radius: 10px;
+	border:5px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 24px;
+	text-decoration:none;
+}
+.MainPage:hover {
+	background-color:#f6f6f6;
+}
+.MainPage:active {
+	position:relative;
+	top:1px;
+}
+
 
 .side_menu {
     position: fixed;

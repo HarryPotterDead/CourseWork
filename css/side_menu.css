@@ -1,0 +1,14 @@
+.side_menu {
+  position: fixed;
+  z-index: 98;
+  left: 10px;
+  top: 100px;
+  min-width: fit-content;
+  min-height: 75%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.side_menu {
+  font: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
