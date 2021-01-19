@@ -20,10 +20,10 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-    .menu_up { 
-        font: normal;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.menu_up {
+    font: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
 .side_menu {
     position: fixed;
@@ -35,9 +35,9 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-    .side_menu {
-        font: normal;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.side_menu {
+    font: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .main_field {
@@ -51,7 +51,7 @@
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-    .main_field {
-        font: normal;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
+.main_field {
+    font: normal;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
