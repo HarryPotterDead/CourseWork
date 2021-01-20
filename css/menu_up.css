@@ -1,9 +1,10 @@
 .menu_up {
+  z-index: 100;
   position: fixed;
   left: 133px;
   right: 2%;
-  top: 10px;
+  top: 0px;
   min-width: 40%;
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
 }
