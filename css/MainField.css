@@ -1,0 +1,14 @@
+.main_field {
+  position: fixed;
+  left: 220px;
+  right: 2%;
+  top: 100px;
+  min-width: 40%;
+  min-height: 75%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main_field {
+  font: normal;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

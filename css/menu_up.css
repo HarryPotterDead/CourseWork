@@ -1,0 +1,9 @@
+.menu_up {
+  position: fixed;
+  left: 133px;
+  right: 2%;
+  top: 10px;
+  min-width: 40%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
