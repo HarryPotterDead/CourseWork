@@ -1,11 +1,12 @@
 .main_field {
+  z-index: 10;
   position: fixed;
   left: 220px;
   right: 2%;
   top: 100px;
   min-width: 40%;
   min-height: 75%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, rgb(225, 121, 35), rgb(255, 196, 35));
 }
 
 .main_field {
