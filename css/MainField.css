@@ -6,7 +6,9 @@
   top: 100px;
   min-width: 40%;
   min-height: 75%;
-  background: linear-gradient(to right, rgb(225, 121, 35), rgb(255, 196, 35));
+  padding-top: 10px;
+  padding-left: 10px;
+  background-color: rgb(200, 200, 200, 0.7) 
 }
 
 .main_field {

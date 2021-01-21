@@ -3,7 +3,7 @@ ul {
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
   margin-top:25px; /*делаем отступ сверху*/
-  background: rgb(225, 121, 35); /*добавляем фон всему меню*/
+  background: transparent; /*добавляем фон всему меню*/
   height: 50px; /*задаем высоту*/
 }
 a {
@@ -45,5 +45,5 @@ li {
     }
 
 body {
-background: linear-gradient(to right, rgb(225, 121, 35), rgb(255, 196, 35));
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }
