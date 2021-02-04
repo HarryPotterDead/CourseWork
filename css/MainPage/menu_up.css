@@ -8,3 +8,9 @@
   height: 50px;
   background-color: rgba(0, 0, 0, 0);
 }
+
+.Login {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+}
