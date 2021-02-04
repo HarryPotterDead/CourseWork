@@ -3,12 +3,12 @@ ul {
   margin: 0; /*убираем отступы*/
   padding-left: 0; /*убираем отступы*/
   margin-top:25px; /*делаем отступ сверху*/
-  background: #b927b9; /*добавляем фон всему меню*/
+  background: transparent; /*добавляем фон всему меню*/
   height: 50px; /*задаем высоту*/
 }
 a {
   text-decoration: none; /*убираем подчеркивание текста ссылок*/
-  background: #826482; /*добавляем фон к пункту меню*/
+  background: rgb(136, 100, 0); /*добавляем фон к пункту меню*/
   color:#fff; /*меняем цвет ссылок*/
   padding:0px 15px; /*добавляем отступ*/
   font-family: arial; /*меняем шрифт*/
@@ -21,7 +21,7 @@ a {
 
 }
 a:hover {
-  background:#afafaf;/*добавляем эффект при наведении*/
+  background:rgb(225, 121, 35);/*добавляем эффект при наведении*/
 }
 li {
   float:left; /*Размещаем список горизонтально для реализации меню*/
@@ -43,3 +43,7 @@ li {
    li:hover > ul > li {
         float:none; /*Убираем горизонтальное позиционирование*/
     }
+
+body {
+  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+}
