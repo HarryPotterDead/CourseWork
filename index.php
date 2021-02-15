@@ -1,3 +1,7 @@
+<?php
+require_once 'connect.php';
+require_once 'action.php';
+?>
 <!doctype html>
 <html lang="ru">
 
@@ -36,6 +40,8 @@
             </li>
             <li><a href="#">Цены</a></li>
             <li><a href="#">Контакты</a></li>
+            <li><a href="index.php?page=auth">Авторизация</a></li>
+            <li><a href="index.php?page=admin">Админка</a></li>
         </ul>
         <div class="Login">
             <a href="/Login.html">Войти</a>
@@ -56,6 +62,12 @@
     </div>
     <div class="main_field">
         <p>Основной контент сайта</p>
+        <?
+        if (isset($_REQUEST['page'])){
+            require_once $_REQUEST['page'].".php";
+        }
+        ?>
+
     </div>
 </body>
 
