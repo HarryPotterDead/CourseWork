@@ -1,13 +1,12 @@
 .main_field {
+  margin: 10px;
   z-index: 10;
   position: fixed;
-  left: 220px;
+  left: 2%;
   right: 2%;
   top: 100px;
-  min-width: 40%;
-  min-height: 75%;
-  padding-top: 10px;
-  padding-left: 10px;
+  min-width: 90%;
+  min-height: 80%;  
   background-color: rgb(200, 200, 200, 0.7) 
 }
 

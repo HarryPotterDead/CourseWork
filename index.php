@@ -8,6 +8,8 @@ require_once 'action.php';
 <head>
     <meta charset="utf-8" />
     <title>Two Cairs</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/MainPage/style.css">
 
     <link rel="stylesheet" href="css/MainPage/logo.css">
@@ -21,6 +23,7 @@ require_once 'action.php';
     <link rel="stylesheet" href="css/MainPage/side_menu.css">
 
     <link rel="stylesheet" href="css/MainPage/MainField.css">
+    <link rel="stylesheet" href="css/MainPage/order.css">
 
 </head>
 
@@ -30,16 +33,16 @@ require_once 'action.php';
     </div>
     <div class="menu_up">
         <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a href="index.php?page=main">Главная</a></li>
             <li><a href="#">Услуги</a>
                 <ul>
-                    <li><a href="#">Услуга 1</a></li>
-                    <li><a href="#">Длинная услуга 2</a></li>
-                    <li><a href="#">Услуга 3</a></li>
+                    <li><a href="index.php?page=order_phone">Заказ оптом</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контроль качества</a></li>
                 </ul>
             </li>
             <li><a href="#">Цены</a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="index.php?page=contact">Контакты</a></li>
             <li><a href="index.php?page=auth">Авторизация</a></li>
             <li><a href="index.php?page=admin">Админка</a></li>
         </ul>
@@ -55,16 +58,17 @@ require_once 'action.php';
         <div class="AboutUs"> <a href="index.html" class="MainButton">О Нас</a> </div>
         -->
     </div>
-    <div class="side_menu">
+<!--    <div class="side_menu">
         <p>Боковая менюшка</p>
         <p>Растягивается под , контент</p>
         <p>держу в курсе</p>
-    </div>
+    </div> -->
     <div class="main_field">
-        <p>Основной контент сайта</p>
+
+
         <?
         if (isset($_REQUEST['page'])){
-            require_once $_REQUEST['page'].".php";
+            require_once $_REQUEST['page'].".php";//contact.php
         }
         ?>
 
