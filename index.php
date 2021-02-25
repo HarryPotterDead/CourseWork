@@ -23,7 +23,7 @@ require_once 'action.php';
     <link rel="stylesheet" href="css/MainPage/side_menu.css">
 
     <link rel="stylesheet" href="css/MainPage/MainField.css">
-    <link rel="stylesheet" href="css/MainPage/order.css">
+    <link rel="stylesheet" href="css/MainPage/text.css">
 
 </head>
 
@@ -69,6 +69,8 @@ require_once 'action.php';
         <?
         if (isset($_REQUEST['page'])){
             require_once $_REQUEST['page'].".php";//contact.php
+        }else{
+            require_once "main.php";
         }
         ?>
 
