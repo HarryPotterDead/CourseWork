@@ -43,11 +43,9 @@ require_once 'action.php';
             </li>
             <li><a href="#">Цены</a></li>
             <li><a href="index.php?page=contact">Контакты</a></li>
-            <li><a href="index.php?page=auth">Авторизация</a></li>
-            <li><a href="index.php?page=admin">Админка</a></li>
         </ul>
         <div class="Login">
-            <a href="/Login.html">Войти</a>
+        <a href="index.php?page=auth">Войти</a>
         </div>
 
         <!-- Старое меню. Не трогать, вдруг понадобится
@@ -69,6 +67,8 @@ require_once 'action.php';
         <?
         if (isset($_REQUEST['page'])){
             require_once $_REQUEST['page'].".php";//contact.php
+        } else {
+            require_once "main.php";
         }
         ?>
 
