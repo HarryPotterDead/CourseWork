@@ -6,20 +6,22 @@ ul {
   background: transparent; /*добавляем фон всему меню*/
   height: 50px; /*задаем высоту*/
 }
-a {
-  text-decoration: none; /*убираем подчеркивание текста ссылок*/
-  background: rgb(136, 100, 0); /*добавляем фон к пункту меню*/
-  color:#fff; /*меняем цвет ссылок*/
-  padding:0px 15px; /*добавляем отступ*/
-  font-family: arial; /*меняем шрифт*/
-  line-height:50px; /*ровняем меню по вертикали*/
+
+.a_txt {
+  text-decoration: none; 
+  background: rgb(136, 100, 0); 
+  color:#fff; 
+  padding:0px 15px; 
+  font-family: arial; 
+  line-height:50px; 
   display: block; 
-  border-right: 1px solid #000000; /*добавляем бордюр справа*/
-  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  border-right: 1px solid #000000; 
+  -moz-transition: all 0.3s 0.01s ease; 
   -o-transition: all 0.3s 0.01s ease;
   -webkit-transition: all 0.3s 0.01s ease;
 
 }
+ 
 a:hover {
   background:rgb(225, 121, 35);/*добавляем эффект при наведении*/
 }
@@ -44,6 +46,72 @@ li {
         float:none; /*Убираем горизонтальное позиционирование*/
     }
 
+/* Login page */
+
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
+
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* end login page */
+
+/* footer */
+
+.footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:3%;   /* Высота блока "footer" */
+}
+
+/* end footer */
+
 body {
+  display: flex;
   background: linear-gradient(45deg, #EECFBA, #C5DDE8);
 }

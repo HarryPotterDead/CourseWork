@@ -23,7 +23,7 @@ require_once 'action.php';
     <link rel="stylesheet" href="css/MainPage/side_menu.css">
 
     <link rel="stylesheet" href="css/MainPage/MainField.css">
-    <link rel="stylesheet" href="css/MainPage/order.css">
+    <link rel="stylesheet" href="css/MainPage/text.css">
 
 </head>
 
@@ -33,19 +33,27 @@ require_once 'action.php';
     </div>
     <div class="menu_up">
         <ul>
-            <li><a href="index.php?page=main">Главная</a></li>
-            <li><a href="#">Услуги</a>
+            <li><a class="a_txt" href="index.php?page=main">Главная</a></li>
+            <li><a class="a_txt" href="#">Услуги</a>
                 <ul>
-                    <li><a href="index.php?page=order_phone">Заказ оптом</a></li>
-                    <li><a href="#">Доставка</a></li>
-                    <li><a href="#">Контроль качества</a></li>
+                    <li><a class="a_txt" href="index.php?page=order_phone">Заказ оптом</a></li>
+                    <li><a class="a_txt" href="#">Доставка</a></li>
+                    <li><a class="a_txt" href="#">Контроль качества</a></li>
                 </ul>
             </li>
+<<<<<<< HEAD
             <li><a href="#">Цены</a></li>
             <li><a href="index.php?page=contact">Контакты</a></li>
         </ul>
         <div class="Login">
         <a href="index.php?page=auth">Войти</a>
+=======
+            <li><a class="a_txt" href="#">Цены</a></li>
+            <li><a class="a_txt" href="index.php?page=contact">Контакты</a></li>
+        </ul>
+        <div class="Login">
+            <a class="a_txt" href="index.php?page=auth">Войти</a>
+>>>>>>> 2819654646f027213e1b71c68d89bd986ec231be
         </div>
 
         <!-- Старое меню. Не трогать, вдруг понадобится
@@ -67,11 +75,18 @@ require_once 'action.php';
         <?
         if (isset($_REQUEST['page'])){
             require_once $_REQUEST['page'].".php";//contact.php
+<<<<<<< HEAD
         } else {
+=======
+        }else{
+>>>>>>> 2819654646f027213e1b71c68d89bd986ec231be
             require_once "main.php";
         }
         ?>
 
+    </div>
+    <div class="footer">
+        <?php require_once "footer.php" ?>
     </div>
 </body>
 
