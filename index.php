@@ -41,19 +41,11 @@ require_once 'action.php';
                     <li><a class="a_txt" href="#">Контроль качества</a></li>
                 </ul>
             </li>
-<<<<<<< HEAD
-            <li><a href="#">Цены</a></li>
-            <li><a href="index.php?page=contact">Контакты</a></li>
-        </ul>
-        <div class="Login">
-        <a href="index.php?page=auth">Войти</a>
-=======
             <li><a class="a_txt" href="#">Цены</a></li>
             <li><a class="a_txt" href="index.php?page=contact">Контакты</a></li>
         </ul>
         <div class="Login">
             <a class="a_txt" href="index.php?page=auth">Войти</a>
->>>>>>> 2819654646f027213e1b71c68d89bd986ec231be
         </div>
 
         <!-- Старое меню. Не трогать, вдруг понадобится
@@ -75,11 +67,7 @@ require_once 'action.php';
         <?
         if (isset($_REQUEST['page'])){
             require_once $_REQUEST['page'].".php";//contact.php
-<<<<<<< HEAD
-        } else {
-=======
         }else{
->>>>>>> 2819654646f027213e1b71c68d89bd986ec231be
             require_once "main.php";
         }
         ?>
