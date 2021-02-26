@@ -6,20 +6,22 @@ ul {
   background: transparent; /*добавляем фон всему меню*/
   height: 50px; /*задаем высоту*/
 }
-a {
-  text-decoration: none; /*убираем подчеркивание текста ссылок*/
-  background: rgb(136, 100, 0); /*добавляем фон к пункту меню*/
-  color:#fff; /*меняем цвет ссылок*/
-  padding:0px 15px; /*добавляем отступ*/
-  font-family: arial; /*меняем шрифт*/
-  line-height:50px; /*ровняем меню по вертикали*/
+
+.a_txt {
+  text-decoration: none; 
+  background: rgb(136, 100, 0); 
+  color:#fff; 
+  padding:0px 15px; 
+  font-family: arial; 
+  line-height:50px; 
   display: block; 
-  border-right: 1px solid #000000; /*добавляем бордюр справа*/
-  -moz-transition: all 0.3s 0.01s ease; /*делаем плавный переход*/
+  border-right: 1px solid #000000; 
+  -moz-transition: all 0.3s 0.01s ease; 
   -o-transition: all 0.3s 0.01s ease;
   -webkit-transition: all 0.3s 0.01s ease;
 
 }
+ 
 a:hover {
   background:rgb(225, 121, 35);/*добавляем эффект при наведении*/
 }
@@ -97,6 +99,17 @@ h2 {
 }
 
 /* end login page */
+
+/* footer */
+
+.footer {
+  position:fixed;
+  bottom:0;
+  width:100%;
+  height:3%;   /* Высота блока "footer" */
+}
+
+/* end footer */
 
 body {
   display: flex;
