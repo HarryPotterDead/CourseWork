@@ -8,21 +8,23 @@
 }
 
 .MainButton {
-	background-color:#ffffff;
+	background-color: #ffffff;
 	border-radius: 10px;
-	border:5px solid #dcdcdc;
-	display:inline-block;
-	cursor:pointer;
-	color:#666666;
-	font-family:Arial;
-	font-size:15px;
-	padding:6px 24px;
-	text-decoration:none;
+	border: 5px solid #dcdcdc;
+	display: inline-block;
+	cursor: pointer;
+	color: #666666;
+	font-family: Arial;
+	font-size: 15px;
+	padding: 6px 24px;
+	text-decoration: none;
 }
+
 .MainButton:hover {
-	background-color:#f6f6f6;
+	background-color: #f6f6f6;
 }
+
 .MainButton:active {
-	position:relative;
-	top:1px;
+	position: relative;
+	top: 1px;
 }

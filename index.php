@@ -9,7 +9,7 @@ require_once 'action.php';
     <meta charset="utf-8" />
     <title>Two Cairs</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/MainPage/style.css">
 
     <link rel="stylesheet" href="css/MainPage/logo.css">
@@ -30,32 +30,37 @@ require_once 'action.php';
     <div class="menu_up">
         <ul>
             <li><a class="a_txt" href="index.php?page=main">Главная</a></li>
-            <li><a class="a_txt" href="#">Услуги</a>
+            <li><a class="a_txt" href="#">Адреса Магазинов</a>
                 <ul>
-                    <li><a class="a_txt" href="index.php?page=order_phone">Заказ оптом</a></li>
-                    <li><a class="a_txt" href="#">Доставка</a></li>
-                    <li><a class="a_txt" href="#">Контроль качества</a></li>
+                    <li><a class="a_txt" href="index.php?page=Moscow">Москва</a></li>
+                    <li><a class="a_txt" href="index.php?page=SantPitBurg">Санкт-Питербург</a></li>
+                    <li><a class="a_txt" href="index.php?page=Ekaterinburg">Екатеринбург</a></li>
                 </ul>
             </li>
-            <li><a class="a_txt" href="#">Цены</a></li>
-            <li><a class="a_txt" href="index.php?page=contact">Контакты</a></li>
-        </ul>
-        <div class="Login">
-            <?php if (isset($_REQUEST['login'])): ?>
+            <li><a class="a_txt" href="index.php?page=Pries">Товары</a></li>
+            <li><a class="a_txt" href="index.php?page=recucle">Корзина</a></li>
+            <!-- <div class="Login"> -->
+            <?php if (isset($_SESSION['login'])): ?>
 
-                <a class="a_txt" href="index.php?page=auth"><? print($_REQUEST['login']) ?></a>
+            <li><a class="a_txt" href="index.php?page=admin"><?=$_SESSION['login']; ?></a>
+            <li><a class="a_txt" href="index.php?action=logout">Выйти</a>
 
                 <?php else: ?>
 
-                <a class="a_txt" href="index.php?page=auth">Войти</a>
+            <li><a class="a_txt" href="index.php?page=auth">Войти</a>
+            <li><a class="a_txt" href="index.php?page=register">Регистрация</a>
 
                 <?php endif ?>
-        </div>
+
+        </ul>
+        <!-- </div> -->
     </div>
     <div class="main_field">
 
 
+
         <?
+        if (isset($message))print $message;
         if (isset($_REQUEST['page'])){
             require_once $_REQUEST['page'].".php";//contact.php
         }else{
